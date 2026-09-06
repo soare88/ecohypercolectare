@@ -1,128 +1,507 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Generator SEO -->
-    <title>Eco Hyper Colectare - Colectare și Gestionare Deșeuri Reciclabile</title>
-    <meta name="description" content="Servicii autorizate de colectare, sortare și pregătire pentru valorificare a deșeurilor reciclabile pentru companii și instituții.">
-    <meta name="keywords" content="colectare deșeuri, reciclare, sortare deșeuri, hartie, carton, plastic, metale, eco hyper colectare">
-    <meta name="robots" content="index, follow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        :root {
-            --primary: #1b5e20;
-            --accent: #2e7d32;
-            --dark: #212121;
-            --light: #f4f6f4;
-            --white: #ffffff;
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
-        body { color: var(--dark); background: var(--light); line-height: 1.6; }
-        
-        header { background: var(--white); box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
-        .container { width: 90%; max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
-        .logo { font-size: 22px; font-weight: bold; color: var(--primary); text-decoration: none; }
-        nav ul { display: flex; list-style: none; gap: 20px; }
-        nav ul li a { text-decoration: none; color: var(--dark); font-weight: 500; }
-        nav ul li a:hover { color: var(--accent); }
+<title>Eco Hyper Colectare - Colectare Deșeuri Reciclabile</title>
+<meta name="description" content="Eco Hyper Colectare preia hârtie și plastic direct din punctele de lucru și le direcționează către operatori autorizați de valorificare.">
+<meta name="keywords" content="colectare deșeuri, reciclare, sortare deșeuri, hârtie, plastic">
+<meta name="robots" content="index, follow">
 
-        .hero { background: linear-gradient(rgba(27,94,32,0.85), rgba(46,125,50,0.85)), url('https://images.unsplash.com/photo-1532996122724-e3c3fa9a0d35?auto=format&fit=crop&w=1200&q=80') center/cover; color: var(--white); text-align: center; padding: 90px 20px; }
-        .hero h1 { font-size: 36px; margin-bottom: 15px; }
-        .hero p { font-size: 17px; max-width: 650px; margin: 0 auto 25px auto; }
-        
-        .btn { background: var(--white); color: var(--primary); padding: 12px 28px; border-radius: 4px; text-decoration: none; font-weight: bold; display: inline-block; }
-        
-        .section { padding: 50px 0; background: var(--white); }
-        .section.alt { background: var(--light); }
-        .section h2 { text-align: center; color: var(--primary); margin-bottom: 35px; font-size: 28px; }
-        
-        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-        @media(max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
-        
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .service-card { background: var(--light); padding: 25px; border-radius: 6px; border-left: 4px solid var(--accent); }
-        .service-card h3 { color: var(--primary); margin-bottom: 10px; }
+<meta property="og:title" content="Eco Hyper Colectare - Colectare Deșeuri Reciclabile">
+<meta property="og:description" content="Colectare directă de materiale reciclabile pentru firme, direcționate către operatori autorizați.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.ecohypercolectare.ro">
 
-        .contact-box { background: var(--white); padding: 30px; border-radius: 6px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.05); max-width: 500px; margin: 0 auto; }
-        .phone { font-size: 22px; font-weight: bold; color: var(--primary); text-decoration: none; display: block; margin-top: 10px; }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-        footer { background: var(--dark); color: #bbb; text-align: center; padding: 25px 0; font-size: 14px; }
-    </style>
+<style>
+  :root{
+    --bg:#EDE8DC;
+    --surface:#F7F4EC;
+    --ink:#20291D;
+    --ink-soft:#5B6153;
+    --rule:#C9C0A8;
+    --tag-paper:#A8763E;
+    --tag-plastic:#3E6E82;
+    --cream:#FAF8F2;
+    --dark1:#182619;
+    --dark2:#3D5C3A;
+    --dark3:#6B8C5A;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    line-height:1.6;
+    font-size:16px;
+  }
+
+  h1, h2, h3{
+    font-family:'Newsreader', serif;
+    font-weight:500;
+    letter-spacing:-0.01em;
+  }
+
+  .container{
+    width:90%;
+    max-width:1120px;
+    margin:0 auto;
+  }
+
+  a{ color:inherit; }
+
+  header{
+    position:sticky;
+    top:0;
+    background:var(--bg);
+    border-bottom:1px solid var(--rule);
+    z-index:100;
+  }
+
+  header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 0;
+  }
+
+  .logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:'Newsreader', serif;
+    font-style:italic;
+    font-size:21px;
+    text-decoration:none;
+    color:var(--ink);
+  }
+
+  .logo svg{ width:24px; height:24px; color:var(--tag-plastic); }
+
+  nav ul{
+    list-style:none;
+    display:flex;
+    gap:34px;
+  }
+
+  nav a{
+    text-decoration:none;
+    font-size:15px;
+    color:var(--ink-soft);
+    transition:color .2s;
+  }
+
+  nav a:hover{ color:var(--ink); }
+
+  .hero{
+    position:relative;
+    overflow:hidden;
+    background:linear-gradient(150deg, var(--dark1) 0%, var(--dark2) 55%, var(--dark3) 100%);
+    padding:130px 0 110px;
+    color:var(--cream);
+  }
+
+  .hero-mark{
+    position:absolute;
+    top:-70px;
+    right:-70px;
+    width:540px;
+    height:540px;
+    color:#ffffff;
+    opacity:0.08;
+    transform:rotate(-14deg);
+  }
+
+  .hero-blob{
+    position:absolute;
+    bottom:-140px;
+    left:-110px;
+    width:380px;
+    height:380px;
+    background:var(--dark3);
+    border-radius:50%;
+    filter:blur(70px);
+    opacity:0.4;
+  }
+
+  .hero .container{
+    position:relative;
+    z-index:2;
+    display:grid;
+    grid-template-columns:1.5fr 1fr;
+    gap:60px;
+    align-items:start;
+  }
+
+  .hero h1{
+    font-size:46px;
+    line-height:1.18;
+    font-style:italic;
+    margin-bottom:26px;
+    color:var(--cream);
+  }
+
+  .hero p{
+    font-size:17px;
+    color:#D8DECF;
+    max-width:480px;
+    margin-bottom:34px;
+  }
+
+  .btn{
+    display:inline-block;
+    background:var(--cream);
+    color:var(--ink);
+    padding:14px 30px;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:500;
+    border-radius:2px;
+  }
+
+  .btn:hover{ background:#ffffff; }
+
+  .material-preview{
+    padding-top:8px;
+  }
+
+  .material-preview .tag-row{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:14px 0;
+    border-top:1px solid rgba(255,255,255,0.2);
+    font-size:15px;
+    color:#D8DECF;
+  }
+
+  .material-preview .tag-row:last-child{
+    border-bottom:1px solid rgba(255,255,255,0.2);
+  }
+
+  .material-preview svg{ width:18px; height:18px; flex-shrink:0; }
+
+  .about{
+    position:relative;
+    overflow:hidden;
+    padding:80px 0;
+    background:var(--surface);
+    border-top:1px solid var(--rule);
+    border-bottom:1px solid var(--rule);
+  }
+
+  .about-mark{
+    position:absolute;
+    bottom:-60px;
+    right:-40px;
+    width:260px;
+    height:260px;
+    color:var(--tag-plastic);
+    opacity:0.08;
+  }
+
+  .about .container{
+    position:relative;
+    z-index:2;
+    display:grid;
+    grid-template-columns:1.4fr 1fr;
+    gap:70px;
+  }
+
+  .about h2{
+    font-size:30px;
+    font-style:italic;
+    margin-bottom:24px;
+  }
+
+  .about p{
+    color:var(--ink-soft);
+    margin-bottom:18px;
+    max-width:520px;
+  }
+
+  .manifest-facts .fact{
+    padding:18px 0;
+    border-top:1px solid var(--rule);
+  }
+
+  .manifest-facts .fact:last-child{
+    border-bottom:1px solid var(--rule);
+  }
+
+  .fact .label{
+    font-size:13px;
+    color:var(--ink-soft);
+    margin-bottom:4px;
+  }
+
+  .fact .value{
+    font-family:'Newsreader', serif;
+    font-size:19px;
+  }
+
+  .materials{
+    padding:90px 0;
+  }
+
+  .materials h2{
+    font-size:30px;
+    font-style:italic;
+    margin-bottom:44px;
+  }
+
+  .material-row{
+    display:grid;
+    grid-template-columns:32px 220px 1fr;
+    gap:28px;
+    align-items:start;
+    padding:28px 0;
+    border-top:1px solid var(--rule);
+  }
+
+  .material-row:last-child{
+    border-bottom:1px solid var(--rule);
+  }
+
+  .material-row svg{
+    width:26px;
+    height:26px;
+    margin-top:2px;
+  }
+
+  .material-row h3{
+    font-size:22px;
+    font-style:italic;
+  }
+
+  .material-row p{
+    color:var(--ink-soft);
+    max-width:520px;
+  }
+
+  .contact{
+    padding:90px 0 100px;
+    background:var(--surface);
+    border-top:1px solid var(--rule);
+  }
+
+  .contact .container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:start;
+  }
+
+  .contact h2{
+    font-size:30px;
+    font-style:italic;
+    margin-bottom:20px;
+  }
+
+  .contact p{
+    color:var(--ink-soft);
+    max-width:400px;
+  }
+
+  .contact-box{
+    border-left:2px solid var(--tag-plastic);
+    padding-left:28px;
+  }
+
+  .phone-link{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    font-family:'Newsreader', serif;
+    font-size:26px;
+    text-decoration:none;
+    color:var(--ink);
+    margin-bottom:14px;
+  }
+
+  .email-link{
+    display:block;
+    font-size:15px;
+    text-decoration:none;
+    color:var(--tag-plastic);
+    margin-bottom:14px;
+  }
+
+  .hours{
+    font-size:15px;
+    color:var(--ink-soft);
+  }
+
+  footer{
+    background:var(--dark1);
+    color:#C7CBBF;
+    padding:36px 0;
+  }
+
+  footer .container{
+    font-size:13.5px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+
+  footer svg{ width:16px; height:16px; color:var(--dark3); flex-shrink:0; }
+
+  footer .foot-text p + p{ margin-top:4px; color:#8E9384; }
+
+  @media (max-width: 760px){
+    .hero .container,
+    .about .container,
+    .contact .container{
+      grid-template-columns:1fr;
+    }
+    .hero{ padding:80px 0 60px; }
+    .hero h1{ font-size:34px; }
+    nav ul{ gap:18px; }
+    .material-row{
+      grid-template-columns:26px 1fr;
+    }
+    .material-row h3{ grid-column:2; }
+    .material-row p{ grid-column:2; }
+  }
+</style>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <a href="#" class="logo">Eco Hyper Colectare</a>
-            <nav>
-                <ul>
-                    <li><a href="#">Acasă</a></li>
-                    <li><a href="#despre">Despre Noi</a></li>
-                    <li><a href="#servicii">Servicii</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="recycle-mark" viewBox="0 0 100 100">
+      <g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="55.25" y1="20.85" x2="71.15" y2="47.65" />
+        <line x1="74.5" y1="71" x2="42.5" y2="71" />
+        <line x1="20.25" y1="62.15" x2="36.15" y2="35.35" />
+      </g>
+      <g fill="currentColor">
+        <polygon points="76.25,56.25 66.85,50.2 75.45,45.1" />
+        <polygon points="32.5,71 42.5,76 42.5,66" />
+        <polygon points="41.25,26.75 40.45,37.9 31.85,32.8" />
+      </g>
+    </symbol>
+    <symbol id="icon-paper" viewBox="0 0 24 24">
+      <path d="M6 3h9l4 4v14H6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M15 3v4h4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <line x1="9" y1="12" x2="16" y2="12" stroke="currentColor" stroke-width="1.4"/>
+      <line x1="9" y1="16" x2="16" y2="16" stroke="currentColor" stroke-width="1.4"/>
+    </symbol>
+    <symbol id="icon-plastic" viewBox="0 0 24 24">
+      <path d="M10 2h4v3l2 2v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7l2-2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <line x1="9" y1="11" x2="15" y2="11" stroke="currentColor" stroke-width="1.4"/>
+    </symbol>
+  </defs>
+</svg>
 
-    <section class="hero">
-        <h1>Soluții Complete de Colectare și Gestionare a Deșeurilor</h1>
-        <p>Transformăm deșeurile reciclabile în resurse valoroase prin servicii profesioniste dedicate mediului de afaceri.</p>
-        <a href="#contact" class="btn">Solicită Ofertă</a>
-    </section>
+<header>
+  <div class="container">
+    <a href="#" class="logo">
+      <svg viewBox="0 0 100 100"><use href="#recycle-mark"/></svg>
+      Eco Hyper Colectare
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#despre">Despre</a></li>
+        <li><a href="#materiale">Materiale</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-    <section id="despre" class="section">
-        <div class="container grid-2">
-            <div>
-                <h2>Despre Activitatea Noastră</h2>
-                <p style="margin-bottom: 15px;">Societatea desfășoară activități de colectare, sortare, pregătire pentru valorificare și gestionare a deșeurilor reciclabile, contribuind la reintrarea materialelor în circuitul economic și la protejarea mediului.</p>
-                <p>Activitatea noastră vizează preluarea de materiale provenite de la persoane juridice, instituții și alte surse autorizate, operând cu responsabilitate și transparență pe piața de profil.</p>
-            </div>
-            <div style="background: var(--light); padding: 30px; border-radius: 6px;">
-                <h3 style="color: var(--primary); margin-bottom: 15px;">Angajamentul Nostru</h3>
-                <p>Urmărim dezvoltarea unor relații comerciale durabile cu furnizorii și partenerii, oferind servicii eficiente și respectând cu strictețe legislația de mediu și normele de siguranță aplicabile.</p>
-            </div>
-        </div>
-    </section>
+<section class="hero">
+  <svg class="hero-mark" viewBox="0 0 100 100"><use href="#recycle-mark"/></svg>
+  <div class="hero-blob"></div>
+  <div class="container">
+    <div>
+      <h1>Ce arunci tu, altcineva transformă în materie primă.</h1>
+      <p>Preluăm hârtie și plastic direct din punctele de lucru și le direcționăm către operatori autorizați de valorificare, cu un singur punct de contact pentru toată colectarea.</p>
+      <a href="#contact" class="btn">Solicită o ridicare</a>
+    </div>
+    <div class="material-preview">
+      <div class="tag-row"><svg style="color:var(--tag-paper)" viewBox="0 0 24 24"><use href="#icon-paper"/></svg> Hârtie și carton</div>
+      <div class="tag-row"><svg style="color:var(--tag-plastic)" viewBox="0 0 24 24"><use href="#icon-plastic"/></svg> Plastic</div>
+    </div>
+  </div>
+</section>
 
-    <section id="servicii" class="section alt">
-        <div class="container">
-            <h2>Fluxul de Colectare și Materiale</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Hârtie și Carton</h3>
-                    <p>Colectăm ambalaje și deșeuri papetare de la punctele de lucru ale partenerilor comerciali.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Plastic</h3>
-                    <p>Preluăm mase plastice, folii și ambalaje destinate operațiunilor de sortare și valorificare.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Alte Reciclabile</h3>
-                    <p>Gestionăm o gamă variată de materiale valorificabile în funcție de capacitățile disponibile.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="despre" class="about">
+  <svg class="about-mark" viewBox="0 0 100 100"><use href="#recycle-mark"/></svg>
+  <div class="container">
+    <div>
+      <h2>O activitate construită pe colectare directă</h2>
+      <p>Lucrăm cu firme care generează constant deșeuri reciclabile — depozite, ateliere de producție, spații comerciale — și le scutim de bătaia de cap a găsirii unor puncte de predare separate pentru fiecare tip de material.</p>
+      <p>Materialele preluate sunt sortate și direcționate exclusiv către operatori licențiați pentru reciclare, în conformitate cu reglementările în vigoare.</p>
+    </div>
+    <div class="manifest-facts">
+      <div class="fact">
+        <div class="label">Tip parteneriat</div>
+        <div class="value">Colectare directă, recurentă</div>
+      </div>
+      <div class="fact">
+        <div class="label">Program</div>
+        <div class="value">Luni – Vineri, 08:00 – 18:00</div>
+      </div>
+      <div class="fact">
+        <div class="label">Destinație materiale</div>
+        <div class="value">Operatori autorizați de valorificare</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contactează-ne</h2>
-            <div class="contact-box">
-                <p>Ai deșeuri reciclabile de predat? Discută cu echipa noastră:</p>
-                <a href="tel:+40700000000" class="phone">📞 +40 700 000 000</a>
-                <p style="margin-top: 15px; color: #666; font-size: 15px;">Program: Luni - Vineri: 08:00 - 16:30</p>
-            </div>
-        </div>
-    </section>
+<section id="materiale" class="materials">
+  <div class="container">
+    <h2>Materiale pe care le preluăm</h2>
 
-    <footer>
-        <div class="container" style="display: block;">
-            <p>&copy; 2026 Eco Hyper Colectare (ecohypercolectare.ro). Toate drepturile rezervate.</p>
-        </div>
-    </footer>
+    <div class="material-row">
+      <svg style="color:var(--tag-paper)" viewBox="0 0 24 24"><use href="#icon-paper"/></svg>
+      <h3>Hârtie și carton</h3>
+      <p>Ambalaje, cutii și deșeuri papetare preluate direct de la punctele de lucru, pregătite pentru predare la centre de valorificare.</p>
+    </div>
+
+    <div class="material-row">
+      <svg style="color:var(--tag-plastic)" viewBox="0 0 24 24"><use href="#icon-plastic"/></svg>
+      <h3>Plastic</h3>
+      <p>Folii, ambalaje și mase plastice industriale, sortate pe tip de polimer înainte de a fi direcționate spre reciclare.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div>
+      <h2>Programează o ridicare</h2>
+      <p>Suni sau ne scrii, stabilim volumul și tipul de material, iar echipa noastră vine direct la locația ta.</p>
+    </div>
+    <div class="contact-box">
+      <a href="tel:+40791178888" class="phone-link">0791 178 888</a>
+      <a href="mailto:contact@ecohypercolectare.ro" class="email-link">contact@ecohypercolectare.ro</a>
+      <div class="hours">Str. Principală 89, Greaca, jud. Giurgiu</div>
+      <div class="hours">Luni – Vineri, 08:00 – 18:00</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <svg viewBox="0 0 100 100"><use href="#recycle-mark"/></svg>
+    <div class="foot-text">
+      <p>&copy; 2026 Eco Hyper Colectare (ecohypercolectare.ro). Toate drepturile rezervate.</p>
+      <p>Activitate de colectare și gestionare a deșeurilor reciclabile.</p>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
