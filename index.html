@@ -57,6 +57,7 @@
 
   a{ color:inherit; }
 
+  /* Header */
   header{
     position:sticky;
     top:0;
@@ -100,10 +101,13 @@
 
   nav a:hover{ color:var(--ink); }
 
+  /* Hero with background imagery */
   .hero{
     position:relative;
     overflow:hidden;
-    background:linear-gradient(150deg, var(--dark1) 0%, var(--dark2) 55%, var(--dark3) 100%);
+    background-image: linear-gradient(150deg, rgba(24,38,25,0.78) 0%, rgba(61,92,58,0.68) 55%, rgba(107,140,90,0.55) 100%), url('images/hero-bg.jpg');
+    background-size:cover;
+    background-position:center;
     padding:130px 0 110px;
     color:var(--cream);
   }
@@ -188,6 +192,7 @@
 
   .material-preview svg{ width:18px; height:18px; flex-shrink:0; }
 
+  /* Despre */
   .about{
     position:relative;
     overflow:hidden;
@@ -247,6 +252,7 @@
     font-size:19px;
   }
 
+  /* Materiale */
   .materials{
     padding:90px 0;
   }
@@ -286,6 +292,7 @@
     max-width:520px;
   }
 
+  /* Contact */
   .contact{
     padding:90px 0 100px;
     background:var(--surface);
@@ -339,6 +346,7 @@
     color:var(--ink-soft);
   }
 
+  /* Footer */
   footer{
     background:var(--dark1);
     color:#C7CBBF;
@@ -357,6 +365,7 @@
 
   footer .foot-text p + p{ margin-top:4px; color:#8E9384; }
 
+  /* Responsive */
   @media (max-width: 760px){
     .hero .container,
     .about .container,
@@ -376,6 +385,7 @@
 </head>
 <body>
 
+<!-- Shared icon defs: recycling mark + material icons -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="recycle-mark" viewBox="0 0 100 100">
