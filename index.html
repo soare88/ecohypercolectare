@@ -8,7 +8,7 @@
 <meta name="description" content="Eco Hyper Colectare preia hârtie și plastic direct din punctele de lucru și le direcționează către operatori autorizați de valorificare.">
 <meta name="keywords" content="colectare deșeuri, reciclare, sortare deșeuri, hârtie, plastic">
 <meta name="robots" content="index, follow">
-
+<link rel="icon" type="image/jpeg" href="images/favicon.jpg">
 <meta property="og:title" content="Eco Hyper Colectare - Colectare Deșeuri Reciclabile">
 <meta property="og:description" content="Colectare directă de materiale reciclabile pentru firme, direcționate către operatori autorizați.">
 <meta property="og:type" content="website">
@@ -374,12 +374,25 @@
     }
     .hero{ padding:80px 0 60px; }
     .hero h1{ font-size:34px; }
-    nav ul{ gap:18px; }
+    header .container{
+      flex-wrap:wrap;
+      justify-content:center;
+      row-gap:10px;
+      padding:16px 0;
+    }
+    nav ul{ gap:18px; justify-content:center; }
     .material-row{
       grid-template-columns:26px 1fr;
     }
     .material-row h3{ grid-column:2; }
     .material-row p{ grid-column:2; }
+  }
+
+  @media (max-width: 420px){
+    .logo{ font-size:18px; }
+    .hero h1{ font-size:28px; }
+    nav ul{ gap:12px; }
+    nav a{ font-size:13.5px; }
   }
 </style>
 </head>
