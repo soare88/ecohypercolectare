@@ -4,46 +4,44 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Eco Hyper Colectare - Colectare Deșeuri Reciclabile</title>
-<meta name="description" content="Eco Hyper Colectare preia hârtie și plastic direct din punctele de lucru și le direcționează către operatori autorizați de valorificare.">
-<meta name="keywords" content="colectare deșeuri, reciclare, sortare deșeuri, hârtie, plastic">
+<title>Clean Connection - Colectare, Sortare și Management Deșeuri</title>
+<meta name="description" content="Clean Connection preia, sortează și direcționează deșeurile reciclabile ale partenerilor comerciali către operatori autorizați de procesare.">
+<meta name="keywords" content="clean connection, colectare deseuri, reciclare industriala, management deseuri">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.ecohypercolectare.ro/">
+<link rel="canonical" href="https://www.cleanconnection.ro/">
 <link rel="icon" type="image/jpeg" href="images/favicon.jpg">
 
 <!-- Open Graph -->
-<meta property="og:site_name" content="Eco Hyper Colectare">
-<meta property="og:title" content="Eco Hyper Colectare - Colectare Deșeuri Reciclabile">
-<meta property="og:description" content="Colectare directă de materiale reciclabile pentru firme, direcționate către operatori autorizați.">
+<meta property="og:site_name" content="Clean Connection">
+<meta property="og:title" content="Clean Connection - Colectare, Sortare și Management Deșeuri">
+<meta property="og:description" content="Fluxul tău de deșeuri, coordonat de la un capăt la altul.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.ecohypercolectare.ro">
-<meta property="og:image" content="https://www.ecohypercolectare.ro/images/hero-bg.jpg">
+<meta property="og:url" content="https://www.cleanconnection.ro">
+<meta property="og:image" content="https://www.cleanconnection.ro/images/hero-bg.jpg">
 <meta property="og:locale" content="ro_RO">
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:locale:alternate" content="de_DE">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Eco Hyper Colectare - Colectare Deșeuri Reciclabile">
-<meta name="twitter:description" content="Colectare directă de materiale reciclabile pentru firme, direcționate către operatori autorizați.">
-<meta name="twitter:image" content="https://www.ecohypercolectare.ro/images/hero-bg.jpg">
+<meta name="twitter:title" content="Clean Connection - Colectare, Sortare și Management Deșeuri">
+<meta name="twitter:description" content="Fluxul tău de deșeuri, coordonat de la un capăt la altul.">
+<meta name="twitter:image" content="https://www.cleanconnection.ro/images/hero-bg.jpg">
 
 <!-- Structured data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Eco Hyper Colectare",
-  "legalName": "ECO HYPER ENERGY S.R.L.",
-  "url": "https://www.ecohypercolectare.ro",
-  "image": "https://www.ecohypercolectare.ro/images/hero-bg.jpg",
+  "name": "Clean Connection",
+  "url": "https://www.cleanconnection.ro",
+  "image": "https://www.cleanconnection.ro/images/hero-bg.jpg",
   "telephone": "+40791178888",
-  "email": "contact@ecohypercolectare.ro",
+  "email": "contact@cleanconnection.ro",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Str. Principală 89",
-    "addressLocality": "Greaca",
-    "addressRegion": "Giurgiu",
+    "streetAddress": "Str. Silozului nr. 1",
+    "addressLocality": "Târgoviște",
     "addressCountry": "RO"
   },
   "openingHoursSpecification": {
@@ -58,24 +56,18 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 
 <style>
   :root{
-    --bg:#EDE8DC;
-    --surface:#F7F4EC;
-    --ink:#20291D;
-    --ink-soft:#5B6153;
-    --rule:#C9C0A8;
-    --tag-paper:#A8763E;
-    --tag-plastic:#3E6E82;
-    --tag-glass:#5B8A72;
-    --tag-wood:#8C6239;
-    --tag-deee:#6B5B95;
-    --cream:#FAF8F2;
-    --dark1:#182619;
-    --dark2:#3D5C3A;
-    --dark3:#6B8C5A;
+    --bg:#FFFFFF;
+    --surface:#F1F4F6;
+    --ink:#10233F;
+    --ink-soft:#54636F;
+    --accent:#0E9C8C;
+    --line:#DCE2E6;
+    --navy1:#081222;
+    --navy2:#10233F;
   }
 
   *{ box-sizing:border-box; margin:0; padding:0; }
@@ -89,14 +81,18 @@
   }
 
   h1, h2, h3{
-    font-family:'Newsreader', serif;
-    font-weight:500;
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:600;
     letter-spacing:-0.01em;
+  }
+
+  .mono{
+    font-family:'IBM Plex Mono', monospace;
   }
 
   .container{
     width:90%;
-    max-width:1120px;
+    max-width:1080px;
     margin:0 auto;
   }
 
@@ -107,7 +103,7 @@
     position:sticky;
     top:0;
     background:var(--bg);
-    border-bottom:1px solid var(--rule);
+    border-bottom:1px solid var(--line);
     z-index:100;
   }
 
@@ -115,474 +111,416 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:22px 0;
+    padding:20px 0;
   }
 
   .logo{
     display:flex;
     align-items:center;
-    gap:10px;
-    font-family:'Newsreader', serif;
-    font-style:italic;
-    font-size:21px;
+    gap:9px;
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:700;
+    font-size:19px;
     text-decoration:none;
     color:var(--ink);
   }
 
-  .logo svg{ width:24px; height:24px; color:var(--tag-plastic); }
+  .logo svg{ width:22px; height:22px; color:var(--accent); }
 
   nav ul{
     list-style:none;
     display:flex;
-    gap:34px;
+    gap:32px;
   }
 
   nav a{
     text-decoration:none;
-    font-size:15px;
+    font-size:14.5px;
+    font-weight:500;
     color:var(--ink-soft);
     transition:color .2s;
   }
 
   nav a:hover{ color:var(--ink); }
 
+  /* Selector limba */
+  nav ul .lang-switch{ display:flex; align-items:center; gap:4px; }
+  .lang-switch button{
+    font-family:inherit;
+    font-size:12.5px;
+    font-weight:600;
+    letter-spacing:.04em;
+    padding:4px 8px;
+    border:1px solid var(--line);
+    border-radius:6px;
+    background:transparent;
+    color:var(--ink-soft);
+    cursor:pointer;
+    transition:color .2s, border-color .2s, background .2s;
+  }
+  .lang-switch button:hover{ color:var(--ink); border-color:var(--ink-soft); }
+  .lang-switch button.active{
+    background:var(--accent);
+    border-color:var(--accent);
+    color:#fff;
+  }
+
   /* Hero with background imagery */
   .hero{
     position:relative;
     overflow:hidden;
-    background-image: linear-gradient(150deg, rgba(24,38,25,0.78) 0%, rgba(61,92,58,0.68) 55%, rgba(107,140,90,0.55) 100%), url('images/hero-bg.jpg');
+    background-image: linear-gradient(135deg, rgba(8,18,34,0.82) 0%, rgba(16,35,63,0.76) 55%, rgba(14,74,69,0.65) 130%), url('images/hero-bg.jpg');
     background-size:cover;
     background-position:center;
-    padding:130px 0 110px;
-    color:var(--cream);
+    padding:130px 0 100px;
+    text-align:center;
+    color:#fff;
+  }
+
+  .hero-pattern{
+    position:absolute;
+    inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' opacity='0.07'%3E%3Cline x1='40' y1='18' x2='52' y2='38'/%3E%3Cline x1='55' y1='55' x2='28' y2='55'/%3E%3Cline x1='18' y1='48' x2='30' y2='28'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat:repeat;
+  }
+
+  .hero-glow{
+    position:absolute;
+    top:-160px;
+    right:-140px;
+    width:420px;
+    height:420px;
+    background:var(--accent);
+    border-radius:50%;
+    filter:blur(90px);
+    opacity:0.35;
   }
 
   .hero-mark{
     position:absolute;
-    top:-70px;
-    right:-70px;
-    width:540px;
-    height:540px;
+    bottom:-90px;
+    left:50%;
+    transform:translateX(-50%);
+    width:360px;
+    height:360px;
     color:#ffffff;
-    opacity:0.08;
-    transform:rotate(-14deg);
-  }
-
-  .hero-blob{
-    position:absolute;
-    bottom:-140px;
-    left:-110px;
-    width:380px;
-    height:380px;
-    background:var(--dark3);
-    border-radius:50%;
-    filter:blur(70px);
-    opacity:0.4;
+    opacity:0.06;
   }
 
   .hero .container{
     position:relative;
     z-index:2;
-    display:grid;
-    grid-template-columns:1.5fr 1fr;
-    gap:60px;
-    align-items:start;
   }
 
   .hero h1{
-    font-size:46px;
-    line-height:1.18;
-    font-style:italic;
-    margin-bottom:26px;
-    color:var(--cream);
+    font-size:44px;
+    line-height:1.2;
+    max-width:760px;
+    margin:0 auto 22px auto;
+    color:#fff;
   }
 
   .hero p{
     font-size:17px;
-    color:#D8DECF;
-    max-width:480px;
-    margin-bottom:34px;
-  }
-
-  .tagline{
-    font-family:'Newsreader', serif;
-    font-style:italic;
-    font-size:15px;
-    color:#C3CDB8;
-    margin-bottom:16px;
-  }
-
-  .cta-row{
-    display:flex;
-    align-items:center;
-    gap:16px;
-    flex-wrap:wrap;
-  }
-
-  .badge-free{
-    font-size:14px;
-    color:#D8DECF;
-  }
-
-  .badge-free svg{
-    width:14px;
-    height:14px;
-    color:var(--dark3);
-    margin-right:6px;
-    vertical-align:-2px;
+    color:#C9D6DE;
+    max-width:520px;
+    margin:0 auto 34px auto;
   }
 
   .btn{
     display:inline-block;
-    background:var(--cream);
-    color:var(--ink);
-    padding:14px 30px;
+    background:var(--accent);
+    color:#FFFFFF;
+    padding:14px 32px;
     text-decoration:none;
     font-size:15px;
-    font-weight:500;
-    border-radius:2px;
+    font-weight:600;
+    border-radius:4px;
   }
 
-  .btn:hover{ background:#ffffff; }
+  .btn:hover{ background:#0B8577; }
 
-  .material-preview{
-    padding-top:8px;
+  /* Process */
+  .process{
+    padding:80px 0 90px;
+    border-top:1px solid var(--line);
   }
 
-  .material-preview .tag-row{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    padding:14px 0;
-    border-top:1px solid rgba(255,255,255,0.2);
-    font-size:15px;
-    color:#D8DECF;
+  .process h2{
+    font-size:28px;
+    text-align:center;
+    margin-bottom:56px;
   }
 
-  .material-preview .tag-row:last-child{
-    border-bottom:1px solid rgba(255,255,255,0.2);
-  }
-
-  .material-preview svg{ width:18px; height:18px; flex-shrink:0; }
-
-  /* Despre */
-  .about{
+  .flow{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:0;
     position:relative;
-    overflow:hidden;
-    padding:80px 0;
-    background:var(--surface);
-    border-top:1px solid var(--rule);
-    border-bottom:1px solid var(--rule);
   }
 
-  .about-mark{
+  .flow::before{
+    content:"";
     position:absolute;
-    bottom:-60px;
-    right:-40px;
-    width:260px;
-    height:260px;
-    color:var(--tag-plastic);
-    opacity:0.08;
+    top:14px;
+    left:6%;
+    right:6%;
+    height:1px;
+    background:var(--line);
   }
 
-  .about .container{
+  .flow-step{
+    padding:0 18px;
+    position:relative;
+  }
+
+  .flow-step .num{
+    display:inline-block;
+    width:28px;
+    height:28px;
+    line-height:28px;
+    text-align:center;
+    background:var(--bg);
+    border:1px solid var(--accent);
+    color:var(--accent);
+    border-radius:50%;
+    font-size:12px;
+    margin-bottom:18px;
     position:relative;
     z-index:2;
-    display:grid;
-    grid-template-columns:1.4fr 1fr;
-    gap:70px;
   }
 
-  .about h2{
-    font-size:30px;
-    font-style:italic;
-    margin-bottom:24px;
+  .flow-step h3{
+    font-size:17px;
+    margin-bottom:8px;
   }
 
-  .about p{
+  .flow-step p{
+    font-size:14.5px;
     color:var(--ink-soft);
-    margin-bottom:18px;
-    max-width:520px;
-  }
-
-  .manifest-facts .fact{
-    padding:18px 0;
-    border-top:1px solid var(--rule);
-  }
-
-  .manifest-facts .fact:last-child{
-    border-bottom:1px solid var(--rule);
-  }
-
-  .fact .label{
-    font-size:13px;
-    color:var(--ink-soft);
-    margin-bottom:4px;
-  }
-
-  .fact .value{
-    font-family:'Newsreader', serif;
-    font-size:19px;
-  }
-
-  /* Obiective strategice */
-  .objectives{
-    padding:90px 0;
-    background:var(--surface);
-    border-top:1px solid var(--rule);
-    border-bottom:1px solid var(--rule);
-  }
-
-  .objectives h2{
-    font-size:30px;
-    font-style:italic;
-    margin-bottom:14px;
-  }
-
-  .objectives > .container > p{
-    color:var(--ink-soft);
-    max-width:560px;
-    margin-bottom:36px;
-  }
-
-  .obj-row{
-    display:grid;
-    grid-template-columns:36px 1fr;
-    gap:20px;
-    align-items:start;
-    padding:24px 0;
-    border-top:1px solid var(--rule);
-  }
-
-  .obj-row:last-child{ border-bottom:1px solid var(--rule); }
-
-  .obj-row .obj-num{
-    font-family:'Newsreader', serif;
-    font-style:italic;
-    font-size:19px;
-    color:var(--tag-plastic);
-  }
-
-  .obj-row p{
-    color:var(--ink-soft);
-    max-width:560px;
-  }
-
-  /* Servicii */
-  .services{
-    padding:90px 0;
-  }
-
-  .services h2{
-    font-size:30px;
-    font-style:italic;
-    margin-bottom:44px;
   }
 
   /* Materiale */
   .materials{
-    padding:90px 0;
+    padding:80px 0 90px;
+    background:var(--surface);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
   }
 
   .materials h2{
-    font-size:30px;
-    font-style:italic;
-    margin-bottom:44px;
+    font-size:28px;
+    text-align:center;
+    margin-bottom:14px;
   }
 
-  .material-row{
-    display:grid;
-    grid-template-columns:32px 220px 1fr;
-    gap:28px;
-    align-items:start;
-    padding:28px 0;
-    border-top:1px solid var(--rule);
-  }
-
-  .material-row:last-child{
-    border-bottom:1px solid var(--rule);
-  }
-
-  .material-row svg{
-    width:26px;
-    height:26px;
-    margin-top:2px;
-  }
-
-  .material-row h3{
-    font-size:22px;
-    font-style:italic;
-  }
-
-  .material-row p{
+  .materials > .container > p{
+    text-align:center;
     color:var(--ink-soft);
     max-width:520px;
+    margin:0 auto 50px auto;
   }
 
-  /* Avantaje competitive */
-  .advantages{
-    padding:80px 0 90px;
-    background:var(--surface);
-    border-top:1px solid var(--rule);
-  }
-
-  .advantages h2{
-    font-size:30px;
-    font-style:italic;
-    margin-bottom:36px;
-  }
-
-  .advantages-grid{
+  .materials-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px 40px;
+    grid-template-columns:repeat(5, 1fr);
+    gap:18px;
   }
 
-  .advantage-item{
-    display:flex;
-    align-items:flex-start;
-    gap:12px;
+  .material-card{
+    background:var(--bg);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:26px 18px;
+    text-align:center;
   }
 
-  .advantage-item svg{
-    width:20px;
-    height:20px;
-    color:var(--tag-plastic);
-    flex-shrink:0;
-    margin-top:2px;
+  .material-card svg{
+    width:26px;
+    height:26px;
+    color:var(--accent);
+    margin-bottom:14px;
   }
 
-  .advantage-item p{
+  .material-card h3{
+    font-size:14.5px;
+    margin-bottom:6px;
+  }
+
+  .material-card .code{
+    display:block;
+    font-size:11.5px;
+    color:var(--accent);
+    margin-bottom:10px;
+  }
+
+  .material-card p{
+    font-size:12.5px;
     color:var(--ink-soft);
+  }
+
+  /* Why section */
+  .why{
+    position:relative;
+    overflow:hidden;
+    padding:80px 0;
+    background:var(--surface);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+
+  .why-mark{
+    position:absolute;
+    top:-50px;
+    left:-60px;
+    width:240px;
+    height:240px;
+    color:var(--accent);
+    opacity:0.07;
+  }
+
+  .why .container{
+    position:relative;
+    z-index:2;
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:60px;
+    align-items:center;
+  }
+
+  .why h2{
+    font-size:28px;
+    margin-bottom:18px;
+  }
+
+  .why p{
+    color:var(--ink-soft);
+    max-width:440px;
+  }
+
+  .fact-panel{
+    background:var(--bg);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:8px 30px;
+  }
+
+  .fact-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 0;
+    border-top:1px solid var(--line);
+  }
+
+  .fact-row:first-child{ border-top:none; }
+
+  .fact-row .label{
+    font-size:14.5px;
+    color:var(--ink-soft);
+  }
+
+  .fact-row .value{
+    font-size:15px;
+    font-weight:500;
+    color:var(--accent);
   }
 
   /* Contact */
   .contact{
     padding:90px 0 100px;
-    background:var(--surface);
-    border-top:1px solid var(--rule);
-  }
-
-  .contact .container{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:start;
+    text-align:center;
   }
 
   .contact h2{
-    font-size:30px;
-    font-style:italic;
-    margin-bottom:20px;
+    font-size:28px;
+    margin-bottom:16px;
   }
 
-  .contact p{
+  .contact > .container > p{
     color:var(--ink-soft);
-    max-width:400px;
+    max-width:440px;
+    margin:0 auto 40px auto;
   }
 
-  .contact-box{
-    border-left:2px solid var(--tag-plastic);
-    padding-left:28px;
+  .contact-panel{
+    max-width:420px;
+    margin:0 auto;
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:36px;
   }
 
   .phone-link{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    font-family:'Newsreader', serif;
+    display:block;
+    font-family:'Space Grotesk', sans-serif;
     font-size:26px;
+    font-weight:600;
     text-decoration:none;
     color:var(--ink);
-    margin-bottom:14px;
+    margin-bottom:10px;
   }
 
   .email-link{
     display:block;
     font-size:15px;
     text-decoration:none;
-    color:var(--tag-plastic);
+    color:var(--accent);
     margin-bottom:14px;
   }
 
   .hours{
-    font-size:15px;
+    font-size:14px;
     color:var(--ink-soft);
-  }
-
-  .qr-block{
-    margin-top:24px;
-    padding-top:24px;
-    border-top:1px solid var(--rule);
-  }
-
-  .qr-block img{
-    border-radius:4px;
-    display:block;
-    margin-bottom:10px;
-  }
-
-  .qr-caption{
-    font-size:13px;
-    color:var(--ink-soft);
-    max-width:220px;
   }
 
   /* Footer */
   footer{
-    background:var(--dark1);
-    color:#C7CBBF;
-    padding:36px 0;
+    background:var(--navy2);
+    color:#9FB0C0;
+    padding:34px 0;
   }
 
   footer .container{
-    font-size:13.5px;
+    font-size:13px;
     display:flex;
     align-items:center;
     gap:10px;
     flex-wrap:wrap;
   }
 
-  footer svg{ width:16px; height:16px; color:var(--dark3); flex-shrink:0; }
+  footer svg{ width:16px; height:16px; color:var(--accent); flex-shrink:0; }
 
-  footer .foot-text p + p{ margin-top:4px; color:#8E9384; }
+  footer .foot-text p + p{ margin-top:4px; color:#6E7F90; }
 
   /* Responsive */
   @media (max-width: 760px){
-    .hero .container,
-    .about .container,
-    .contact .container{
-      grid-template-columns:1fr;
-    }
+    .hero h1{ font-size:32px; }
     .hero{ padding:80px 0 60px; }
-    .hero h1{ font-size:34px; }
+    .flow{ grid-template-columns:1fr; gap:34px; }
+    .flow::before{ display:none; }
+    .why .container{ grid-template-columns:1fr; }
+    .materials-grid{ grid-template-columns:repeat(2, 1fr); }
     header .container{
       flex-wrap:wrap;
       justify-content:center;
       row-gap:10px;
       padding:16px 0;
     }
-    nav ul{ gap:18px; justify-content:center; }
-    .material-row{
-      grid-template-columns:26px 1fr;
-    }
-    .material-row h3{ grid-column:2; }
-    .material-row p{ grid-column:2; }
-    .obj-row{ grid-template-columns:24px 1fr; }
-    .advantages-grid{ grid-template-columns:1fr; }
+    nav ul{ gap:16px; justify-content:center; }
   }
 
   @media (max-width: 420px){
-    .logo{ font-size:18px; }
-    .hero h1{ font-size:28px; }
+    .logo{ font-size:17px; }
+    .hero h1{ font-size:26px; }
     nav ul{ gap:12px; }
-    nav a{ font-size:13.5px; }
+    nav a{ font-size:13px; }
   }
 </style>
 </head>
 <body>
 
-<!-- Shared icon defs: recycling mark + material icons -->
+<!-- Shared icon defs: recycling mark -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="recycle-mark" viewBox="0 0 100 100">
@@ -607,22 +545,19 @@
       <path d="M10 2h4v3l2 2v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7l2-2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
       <line x1="9" y1="11" x2="15" y2="11" stroke="currentColor" stroke-width="1.4"/>
     </symbol>
-    <symbol id="icon-glass" viewBox="0 0 24 24">
-      <path d="M10 2h4v3.5l1.5 2.5V20a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2V8l1.5-2.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-      <line x1="10" y1="2" x2="14" y2="2" stroke="currentColor" stroke-width="1.6"/>
-    </symbol>
     <symbol id="icon-wood" viewBox="0 0 24 24">
       <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
       <circle cx="12" cy="12" r="4.8" fill="none" stroke="currentColor" stroke-width="1.4"/>
       <circle cx="12" cy="12" r="1.4" fill="currentColor"/>
     </symbol>
+    <symbol id="icon-glass" viewBox="0 0 24 24">
+      <path d="M10 2h4v3.5l1.5 2.5V20a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2V8l1.5-2.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <line x1="10" y1="2" x2="14" y2="2" stroke="currentColor" stroke-width="1.6"/>
+    </symbol>
     <symbol id="icon-deee" viewBox="0 0 24 24">
       <rect x="3" y="4" width="18" height="12" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/>
       <line x1="8" y1="20" x2="16" y2="20" stroke="currentColor" stroke-width="1.6"/>
       <line x1="12" y1="16" x2="12" y2="20" stroke="currentColor" stroke-width="1.6"/>
-    </symbol>
-    <symbol id="icon-check" viewBox="0 0 24 24">
-      <path d="M4 12.5 L9.5 18 L20 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
   </defs>
 </svg>
@@ -631,172 +566,121 @@
   <div class="container">
     <a href="#" class="logo">
       <svg viewBox="0 0 100 100"><use href="#recycle-mark"/></svg>
-      Eco Hyper Colectare
+      Clean Connection
     </a>
     <nav>
       <ul>
-        <li><a href="#despre" data-i18n="nav.despre">Despre</a></li>
-        <li><a href="#obiective" data-i18n="nav.obiective">Obiective</a></li>
-        <li><a href="#servicii" data-i18n="nav.servicii">Servicii</a></li>
+        <li><a href="#proces" data-i18n="nav.proces">Proces</a></li>
         <li><a href="#materiale" data-i18n="nav.materiale">Materiale</a></li>
+        <li><a href="#companie" data-i18n="nav.companie">Companie</a></li>
         <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        <li class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="ro">RO</button>
+          <button type="button" data-set-lang="en">EN</button>
+          <button type="button" data-set-lang="de">DE</button>
+        </li>
       </ul>
     </nav>
   </div>
 </header>
 
 <section class="hero">
+  <div class="hero-pattern"></div>
+  <div class="hero-glow"></div>
   <svg class="hero-mark" viewBox="0 0 100 100"><use href="#recycle-mark"/></svg>
-  <div class="hero-blob"></div>
   <div class="container">
-    <div>
-      <p class="tagline" data-i18n="hero.tagline">Pentru un mediu curat, pentru un viitor sănătos.</p>
-      <h1 data-i18n="hero.h1">Ce arunci tu, altcineva transformă în materie primă.</h1>
-      <p data-i18n="hero.p">Preluăm hârtie, plastic, lemn, sticlă și deșeuri electrice direct din punctele de lucru și le direcționăm către operatori autorizați de valorificare, cu un singur punct de contact pentru toată colectarea.</p>
-      <div class="cta-row">
-        <a href="#contact" class="btn" data-i18n="hero.cta">Solicită o ridicare</a>
-        <span class="badge-free"><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg><span data-i18n="hero.badge">Ridicare gratuită, direct din locația ta</span></span>
-      </div>
-    </div>
-    <div class="material-preview">
-      <div class="tag-row"><svg style="color:var(--tag-paper)" viewBox="0 0 24 24"><use href="#icon-paper"/></svg> <span data-i18n="mat.1">Hârtie și carton</span></div>
-      <div class="tag-row"><svg style="color:var(--tag-plastic)" viewBox="0 0 24 24"><use href="#icon-plastic"/></svg> <span data-i18n="mat.2">Plastic și folie</span></div>
-      <div class="tag-row"><svg style="color:var(--tag-wood)" viewBox="0 0 24 24"><use href="#icon-wood"/></svg> <span data-i18n="mat.3">Lemn</span></div>
-      <div class="tag-row"><svg style="color:var(--tag-glass)" viewBox="0 0 24 24"><use href="#icon-glass"/></svg> <span data-i18n="mat.4">Sticlă</span></div>
-      <div class="tag-row"><svg style="color:var(--tag-deee)" viewBox="0 0 24 24"><use href="#icon-deee"/></svg> <span data-i18n="mat.5">Deșeuri electrice</span></div>
-    </div>
+    <h1 data-i18n="hero.h1">Fluxul tău de deșeuri, coordonat de la un capăt la altul.</h1>
+    <p data-i18n="hero.p">Preluăm, sortăm și direcționăm deșeurile reciclabile ale partenerilor comerciali către operatori autorizați de procesare.</p>
+    <a href="#contact" class="btn" data-i18n="hero.cta">Programează o preluare</a>
   </div>
 </section>
 
-<section id="despre" class="about">
-  <svg class="about-mark" viewBox="0 0 100 100"><use href="#recycle-mark"/></svg>
+<section id="proces" class="process">
   <div class="container">
-    <div>
-      <h2 data-i18n="about.h2">Despre ECO HYPER ENERGY S.R.L.</h2>
-      <p data-i18n="about.p1">ECO HYPER ENERGY S.R.L. este o companie activă pe piața serviciilor de colectare a deșeurilor nepericuloase, cu o echipă dedicată, obiective clare și un angajament ferm pentru protecția mediului.</p>
-      <p data-i18n-html="about.p2"><strong>Misiune:</strong> să oferim servicii profesionale de colectare a deșeurilor nepericuloase, contribuind la protecția mediului și la dezvoltarea unui sistem sustenabil de gestionare a deșeurilor.</p>
-      <p data-i18n-html="about.p3"><strong>Viziune:</strong> să devenim un partener de încredere în sectorul reciclării și colectării deșeurilor, cunoscuți pentru eficiență, responsabilitate și inovație.</p>
-    </div>
-    <div class="manifest-facts">
-      <div class="fact">
-        <div class="label" data-i18n="fact.1.label">CUI</div>
-        <div class="value">52234624</div>
+    <h2 data-i18n="process.h2">Cum funcționează</h2>
+    <div class="flow">
+      <div class="flow-step">
+        <span class="num mono">01</span>
+        <h3 data-i18n="step1.title">Solicitare</h3>
+        <p data-i18n="step1.desc">Ne transmiți tipul și cantitatea estimată de deșeuri.</p>
       </div>
-      <div class="fact">
-        <div class="label" data-i18n="fact.2.label">Înființată</div>
-        <div class="value" data-i18n="fact.2.value">28 iulie 2025</div>
+      <div class="flow-step">
+        <span class="num mono">02</span>
+        <h3 data-i18n="step2.title">Preluare</h3>
+        <p data-i18n="step2.desc">Echipa noastră ridică materialele direct din locația ta.</p>
       </div>
-      <div class="fact">
-        <div class="label" data-i18n="fact.3.label">Domeniu (CAEN 3811)</div>
-        <div class="value" data-i18n="fact.3.value">Colectare deșeuri nepericuloase</div>
+      <div class="flow-step">
+        <span class="num mono">03</span>
+        <h3 data-i18n="step3.title">Sortare</h3>
+        <p data-i18n="step3.desc">Separăm materialele pe categorii, conform standardelor de valorificare.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="obiective" class="objectives">
-  <div class="container">
-    <h2 data-i18n="obj.h2">Obiective strategice</h2>
-    <p data-i18n="obj.intro">Direcțiile pe care le urmărim în dezvoltarea companiei:</p>
-
-    <div class="obj-row">
-      <span class="obj-num">01</span>
-      <p data-i18n="obj.1">Implementarea unor procese eficiente de colectare și depozitare a deșeurilor.</p>
-    </div>
-    <div class="obj-row">
-      <span class="obj-num">02</span>
-      <p data-i18n="obj.2">Dezvoltarea parteneriatelor cu autorități locale și companii private.</p>
-    </div>
-    <div class="obj-row">
-      <span class="obj-num">03</span>
-      <p data-i18n="obj.3">Creșterea graduală a capacității operaționale și a numărului de clienți.</p>
-    </div>
-    <div class="obj-row">
-      <span class="obj-num">04</span>
-      <p data-i18n="obj.4">Respectarea tuturor standardelor de mediu și reglementărilor legale în vigoare.</p>
-    </div>
-  </div>
-</section>
-
-<section id="servicii" class="services">
-  <div class="container">
-    <h2 data-i18n="services.h2">Servicii oferite</h2>
-
-    <div class="material-row">
-      <svg style="color:var(--tag-paper)" viewBox="0 0 24 24"><use href="#icon-paper"/></svg>
-      <h3 data-i18n="services.1.title">Colectare</h3>
-      <p data-i18n="services.1.desc">Colectarea deșeurilor nepericuloase din diverse sectoare — industrial, comercial și rezidențial.</p>
-    </div>
-
-    <div class="material-row">
-      <svg style="color:var(--tag-plastic)" viewBox="0 0 24 24"><use href="#icon-plastic"/></svg>
-      <h3 data-i18n="services.2.title">Transport și depozitare</h3>
-      <p data-i18n="services.2.desc">Transportul și depozitarea deșeurilor conform normelor de mediu în vigoare.</p>
-    </div>
-
-    <div class="material-row">
-      <svg style="color:var(--dark3)" viewBox="0 0 100 100"><use href="#recycle-mark"/></svg>
-      <h3 data-i18n="services.3.title">Consultanță</h3>
-      <p data-i18n="services.3.desc">Consultanță în gestionarea deșeurilor, adaptată nevoilor specifice ale fiecărui client.</p>
+      <div class="flow-step">
+        <span class="num mono">04</span>
+        <h3 data-i18n="step4.title">Direcționare</h3>
+        <p data-i18n="step4.desc">Le trimitem către operatori autorizați de reciclare.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="materiale" class="materials">
   <div class="container">
-    <h2 data-i18n="materials.h2">Materiale pe care le preluăm</h2>
-
-    <div class="material-row">
-      <svg style="color:var(--tag-paper)" viewBox="0 0 24 24"><use href="#icon-paper"/></svg>
-      <h3 data-i18n="materials.1.title">Hârtie și carton</h3>
-      <p data-i18n="materials.1.desc">Ambalaje, cutii și deșeuri papetare preluate direct de la punctele de lucru, pregătite pentru predare la centre de valorificare.</p>
-    </div>
-
-    <div class="material-row">
-      <svg style="color:var(--tag-plastic)" viewBox="0 0 24 24"><use href="#icon-plastic"/></svg>
-      <h3 data-i18n="materials.2.title">Plastic și folie</h3>
-      <p data-i18n="materials.2.desc">Folii, ambalaje și mase plastice industriale, sortate pe tip de polimer înainte de a fi direcționate spre reciclare.</p>
-    </div>
-
-    <div class="material-row">
-      <svg style="color:var(--tag-wood)" viewBox="0 0 24 24"><use href="#icon-wood"/></svg>
-      <h3 data-i18n="materials.3.title">Lemn</h3>
-      <p data-i18n="materials.3.desc">Ambalaje și deșeuri lemnoase provenite din activități industriale sau comerciale, preluate pentru valorificare.</p>
-    </div>
-
-    <div class="material-row">
-      <svg style="color:var(--tag-glass)" viewBox="0 0 24 24"><use href="#icon-glass"/></svg>
-      <h3 data-i18n="materials.4.title">Sticlă</h3>
-      <p data-i18n="materials.4.desc">Ambalaje și deșeuri din sticlă, colectate separat și direcționate către centre specializate de valorificare.</p>
-    </div>
-
-    <div class="material-row">
-      <svg style="color:var(--tag-deee)" viewBox="0 0 24 24"><use href="#icon-deee"/></svg>
-      <h3 data-i18n="materials.5.title">Deșeuri electrice și electrocasnice</h3>
-      <p data-i18n="materials.5.desc">Echipamente electrice și electrocasnice scoase din uz (DEEE), preluate și direcționate conform reglementărilor de mediu.</p>
+    <h2 data-i18n="materials.h2">Materiale colectate</h2>
+    <p data-i18n="materials.intro">Preluăm o gamă variată de deșeuri reciclabile, clasificate conform codurilor europene de deșeuri.</p>
+    <div class="materials-grid">
+      <div class="material-card">
+        <svg viewBox="0 0 24 24"><use href="#icon-paper"/></svg>
+        <h3 data-i18n="mat1.title">Hârtie și carton</h3>
+        <span class="code mono">15.01.01</span>
+        <p data-i18n="mat1.desc">Ambalaje și deșeuri papetare.</p>
+      </div>
+      <div class="material-card">
+        <svg viewBox="0 0 24 24"><use href="#icon-plastic"/></svg>
+        <h3 data-i18n="mat2.title">Plastic și folie</h3>
+        <span class="code mono">15.01.02</span>
+        <p data-i18n="mat2.desc">Mase plastice și folii industriale.</p>
+      </div>
+      <div class="material-card">
+        <svg viewBox="0 0 24 24"><use href="#icon-wood"/></svg>
+        <h3 data-i18n="mat3.title">Lemn</h3>
+        <span class="code mono">15.01.03</span>
+        <p data-i18n="mat3.desc">Ambalaje și deșeuri lemnoase.</p>
+      </div>
+      <div class="material-card">
+        <svg viewBox="0 0 24 24"><use href="#icon-glass"/></svg>
+        <h3 data-i18n="mat4.title">Sticlă</h3>
+        <span class="code mono">15.01.07</span>
+        <p data-i18n="mat4.desc">Ambalaje din sticlă, colectate separat.</p>
+      </div>
+      <div class="material-card">
+        <svg viewBox="0 0 24 24"><use href="#icon-deee"/></svg>
+        <h3 data-i18n="mat5.title">Deșeuri electrice</h3>
+        <span class="code mono">20.01.36</span>
+        <p data-i18n="mat5.desc">Echipamente electrice și electrocasnice (DEEE).</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="advantages">
+<section id="companie" class="why">
+  <svg class="why-mark" viewBox="0 0 100 100"><use href="#recycle-mark"/></svg>
   <div class="container">
-    <h2 data-i18n="advantages.h2">Avantaje competitive</h2>
-    <div class="advantages-grid">
-      <div class="advantage-item">
-        <svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>
-        <p data-i18n="advantages.1">Echipă tânără și motivată, cu experiență în domeniu.</p>
+    <div>
+      <h2 data-i18n="why.h2">Un singur partener pentru tot fluxul de deșeuri</h2>
+      <p data-i18n="why.p">Coordonăm preluarea, sortarea și direcționarea materialelor astfel încât firma ta să nu trebuiască să gestioneze mai mulți furnizori pentru fiecare tip de deșeu.</p>
+    </div>
+    <div class="fact-panel">
+      <div class="fact-row">
+        <span class="label" data-i18n="fact1.label">Zonă acoperită</span>
+        <span class="value mono" data-i18n="fact1.value">Regional</span>
       </div>
-      <div class="advantage-item">
-        <svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>
-        <p data-i18n="advantages.2">Operare cu echipamente moderne și eficiente.</p>
+      <div class="fact-row">
+        <span class="label" data-i18n="fact2.label">Timp de răspuns</span>
+        <span class="value mono">&lt; 48h</span>
       </div>
-      <div class="advantage-item">
-        <svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>
-        <p data-i18n="advantages.3">Respectarea legislației și standardelor de mediu.</p>
-      </div>
-      <div class="advantage-item">
-        <svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>
-        <p data-i18n="advantages.4">Flexibilitate și capacitate de adaptare la nevoile clienților.</p>
+      <div class="fact-row">
+        <span class="label" data-i18n="fact3.label">Program</span>
+        <span class="value mono" data-i18n="fact3.value">L-V, 08-18</span>
       </div>
     </div>
   </div>
@@ -804,21 +688,14 @@
 
 <section id="contact" class="contact">
   <div class="container">
-    <div>
-      <h2 data-i18n="contact.h2">Programează o ridicare</h2>
-      <p data-i18n="contact.p">Suni sau ne scrii, stabilim volumul și tipul de material, iar echipa noastră vine direct la locația ta.</p>
-    </div>
-    <div class="contact-box">
+    <h2 data-i18n="contact.h2">Informații de contact</h2>
+    <p data-i18n="contact.p">Pentru preluări de deșeuri și stabilirea detaliilor de colaborare, contactează-ne direct.</p>
+    <div class="contact-panel">
       <a href="tel:+40791178888" class="phone-link">0791 178 888</a>
-      <a href="mailto:contact@ecohypercolectare.ro" class="email-link">contact@ecohypercolectare.ro</a>
-      <div class="hours">Str. Principală 89, Greaca, jud. Giurgiu</div>
-      <div class="hours" data-i18n="contact.hours">Luni – Vineri, 08:00 – 18:00</div>
-      <div class="qr-block">
-        <a href="https://gaotus.com/sieka-group-roborecy-app/" target="_blank" rel="noopener">
-          <img src="images/qr-roborecy.jpg" alt="Cod QR RoboRecy" width="120" height="120">
-        </a>
-        <p class="qr-caption" data-i18n="qr.caption">Scanează pentru o solicitare rapidă prin platforma parteneră RoboRecy</p>
-      </div>
+      <a href="tel:+40769530218" class="phone-link" style="font-size:18px; margin-top:-4px;">0769 530 218</a>
+      <a href="mailto:contact@cleanconnection.ro" class="email-link">contact@cleanconnection.ro</a>
+      <div class="hours">Str. Silozului nr. 1, Târgoviște</div>
+      <div class="hours" data-i18n="contact.hours">Disponibili Luni – Vineri, 08:00 – 18:00</div>
     </div>
   </div>
 </section>
@@ -827,9 +704,8 @@
   <div class="container">
     <svg viewBox="0 0 100 100"><use href="#recycle-mark"/></svg>
     <div class="foot-text">
-      <p data-i18n="footer.copyright">&copy; 2026 Eco Hyper Colectare (ecohypercolectare.ro). Toate drepturile rezervate.</p>
-      <p data-i18n="footer.legal">Operat de ECO HYPER ENERGY S.R.L. · CUI 52234624 · CAEN 3811</p>
-      <p data-i18n="footer.tagline">Pentru un mediu curat, pentru un viitor sănătos.</p>
+      <p data-i18n="footer.copyright">&copy; 2026 Clean Connection (cleanconnection.ro). Toate drepturile rezervate.</p>
+      <p data-i18n="footer.tagline">Activitate de colectare și management al deșeurilor reciclabile.</p>
     </div>
   </div>
 </footer>
@@ -838,117 +714,158 @@
 (function(){
   var translations = {
     en: {
-      "nav.despre":"About","nav.obiective":"Objectives","nav.servicii":"Services","nav.materiale":"Materials","nav.contact":"Contact",
-      "hero.tagline":"For a clean environment, for a healthier future.",
-      "hero.h1":"What you throw away, someone else turns into raw material.",
-      "hero.p":"We collect paper, plastic, wood, glass and electrical waste directly from your business premises and direct it to authorized recovery operators, with a single point of contact for the entire collection process.",
-      "hero.cta":"Request a pickup",
-      "hero.badge":"Free pickup, straight from your location",
-      "mat.1":"Paper and cardboard","mat.2":"Plastic and film","mat.3":"Wood","mat.4":"Glass","mat.5":"Electrical waste",
-      "about.h2":"About ECO HYPER ENERGY S.R.L.",
-      "about.p1":"ECO HYPER ENERGY S.R.L. is a company active in the non-hazardous waste collection market, with a dedicated team, clear objectives and a firm commitment to environmental protection.",
-      "about.p2":"<strong>Mission:</strong> to provide professional non-hazardous waste collection services, contributing to environmental protection and to the development of a sustainable waste management system.",
-      "about.p3":"<strong>Vision:</strong> to become a trusted partner in the recycling and waste collection sector, known for efficiency, responsibility and innovation.",
-      "fact.1.label":"Tax ID (CUI)","fact.2.label":"Founded","fact.2.value":"28 July 2025",
-      "fact.3.label":"Field (CAEN 3811)","fact.3.value":"Non-hazardous waste collection",
-      "obj.h2":"Strategic objectives","obj.intro":"The directions we're pursuing in developing the company:",
-      "obj.1":"Implementing efficient waste collection and storage processes.",
-      "obj.2":"Developing partnerships with local authorities and private companies.",
-      "obj.3":"Gradually growing operational capacity and the number of clients.",
-      "obj.4":"Complying with all environmental standards and applicable legal regulations.",
-      "services.h2":"Services offered",
-      "services.1.title":"Collection","services.1.desc":"Collection of non-hazardous waste from various sectors — industrial, commercial and residential.",
-      "services.2.title":"Transport and storage","services.2.desc":"Transport and storage of waste in accordance with current environmental regulations.",
-      "services.3.title":"Consulting","services.3.desc":"Waste management consulting, tailored to each client's specific needs.",
+      "meta.title":"Clean Connection - Waste Collection, Sorting and Management",
+      "meta.description":"Clean Connection collects, sorts and routes commercial partners' recyclable waste to authorized processing operators.",
+      "nav.proces":"Process","nav.materiale":"Materials","nav.companie":"Company","nav.contact":"Contact",
+      "hero.h1":"Your waste flow, coordinated from start to finish.",
+      "hero.p":"We collect, sort and direct our commercial partners' recyclable waste to authorized processing operators.",
+      "hero.cta":"Schedule a pickup",
+      "process.h2":"How it works",
+      "step1.title":"Request","step1.desc":"You send us the type and estimated quantity of waste.",
+      "step2.title":"Pickup","step2.desc":"Our team collects the materials directly from your location.",
+      "step3.title":"Sorting","step3.desc":"We separate the materials by category, according to recovery standards.",
+      "step4.title":"Routing","step4.desc":"We send them to authorized recycling operators.",
       "materials.h2":"Materials we collect",
-      "materials.1.title":"Paper and cardboard","materials.1.desc":"Packaging, boxes and paper waste collected directly from business premises, prepared for delivery to recovery centers.",
-      "materials.2.title":"Plastic and film","materials.2.desc":"Film, packaging and industrial plastics, sorted by polymer type before being directed to recycling.",
-      "materials.3.title":"Wood","materials.3.desc":"Wooden packaging and waste from industrial or commercial activities, collected for recovery.",
-      "materials.4.title":"Glass","materials.4.desc":"Glass packaging and waste, collected separately and directed to specialized recovery centers.",
-      "materials.5.title":"Electrical and household appliance waste","materials.5.desc":"Electrical and household appliances at the end of their life (WEEE), collected and handled in accordance with environmental regulations.",
-      "advantages.h2":"Competitive advantages",
-      "advantages.1":"A young, motivated team with experience in the field.",
-      "advantages.2":"Operations using modern, efficient equipment.",
-      "advantages.3":"Full compliance with environmental legislation and standards.",
-      "advantages.4":"Flexibility and ability to adapt to client needs.",
-      "contact.h2":"Schedule a pickup",
-      "contact.p":"Call or write to us, we'll agree on the volume and type of material, and our team will come directly to your location.",
-      "contact.hours":"Monday – Friday, 8:00 AM – 6:00 PM",
-      "qr.caption":"Scan for a quick request through our partner platform, RoboRecy",
-      "footer.copyright":"© 2026 Eco Hyper Colectare (ecohypercolectare.ro). All rights reserved.",
-      "footer.legal":"Operated by ECO HYPER ENERGY S.R.L. · Tax ID 52234624 · CAEN 3811",
-      "footer.tagline":"For a clean environment, for a healthier future."
+      "materials.intro":"We collect a wide range of recyclable waste, classified according to European waste codes.",
+      "mat1.title":"Paper and cardboard","mat1.desc":"Packaging and paper waste.",
+      "mat2.title":"Plastic and film","mat2.desc":"Industrial plastics and film.",
+      "mat3.title":"Wood","mat3.desc":"Wooden packaging and waste.",
+      "mat4.title":"Glass","mat4.desc":"Glass packaging, collected separately.",
+      "mat5.title":"Electrical waste","mat5.desc":"Electrical and household appliances (WEEE).",
+      "why.h2":"A single partner for your entire waste flow",
+      "why.p":"We coordinate pickup, sorting and routing of materials so your company doesn't have to manage multiple suppliers for each type of waste.",
+      "fact1.label":"Area covered","fact1.value":"Regional",
+      "fact2.label":"Response time",
+      "fact3.label":"Hours","fact3.value":"Mon-Fri, 8-18",
+      "contact.h2":"Contact information",
+      "contact.p":"For waste pickups and collaboration details, contact us directly.",
+      "contact.hours":"Available Monday – Friday, 8:00 AM – 6:00 PM",
+      "footer.copyright":"© 2026 Clean Connection (cleanconnection.ro). All rights reserved.",
+      "footer.tagline":"Waste collection and recyclable waste management activity."
     },
     de: {
-      "nav.despre":"Über uns","nav.obiective":"Ziele","nav.servicii":"Leistungen","nav.materiale":"Materialien","nav.contact":"Kontakt",
-      "hero.tagline":"Für eine saubere Umwelt, für eine gesündere Zukunft.",
-      "hero.h1":"Was du wegwirfst, macht ein anderer zu Rohstoff.",
-      "hero.p":"Wir holen Papier, Kunststoff, Holz, Glas und Elektroschrott direkt an Ihrem Standort ab und leiten sie an zugelassene Verwertungsbetriebe weiter — mit einer einzigen Kontaktstelle für die gesamte Sammlung.",
-      "hero.cta":"Abholung anfragen",
-      "hero.badge":"Kostenlose Abholung, direkt vor Ort",
-      "mat.1":"Papier und Karton","mat.2":"Kunststoff und Folie","mat.3":"Holz","mat.4":"Glas","mat.5":"Elektroschrott",
-      "about.h2":"Über ECO HYPER ENERGY S.R.L.",
-      "about.p1":"ECO HYPER ENERGY S.R.L. ist ein Unternehmen im Bereich der Sammlung ungefährlicher Abfälle, mit einem engagierten Team, klaren Zielen und einem festen Engagement für den Umweltschutz.",
-      "about.p2":"<strong>Mission:</strong> professionelle Dienstleistungen zur Sammlung ungefährlicher Abfälle anzubieten und so zum Umweltschutz und zur Entwicklung eines nachhaltigen Abfallmanagementsystems beizutragen.",
-      "about.p3":"<strong>Vision:</strong> ein vertrauenswürdiger Partner im Recycling- und Abfallsammelsektor zu werden, bekannt für Effizienz, Verantwortung und Innovation.",
-      "fact.1.label":"Steuernummer (CUI)","fact.2.label":"Gegründet","fact.2.value":"28. Juli 2025",
-      "fact.3.label":"Tätigkeitsbereich (CAEN 3811)","fact.3.value":"Sammlung ungefährlicher Abfälle",
-      "obj.h2":"Strategische Ziele","obj.intro":"Die Richtungen, die wir bei der Entwicklung des Unternehmens verfolgen:",
-      "obj.1":"Umsetzung effizienter Prozesse zur Sammlung und Lagerung von Abfällen.",
-      "obj.2":"Aufbau von Partnerschaften mit lokalen Behörden und privaten Unternehmen.",
-      "obj.3":"Schrittweise Steigerung der Betriebskapazität und der Kundenzahl.",
-      "obj.4":"Einhaltung aller Umweltstandards und geltenden gesetzlichen Vorschriften.",
-      "services.h2":"Angebotene Leistungen",
-      "services.1.title":"Sammlung","services.1.desc":"Sammlung ungefährlicher Abfälle aus verschiedenen Bereichen — Industrie, Gewerbe und Privathaushalte.",
-      "services.2.title":"Transport und Lagerung","services.2.desc":"Transport und Lagerung von Abfällen gemäß den geltenden Umweltvorschriften.",
-      "services.3.title":"Beratung","services.3.desc":"Beratung im Abfallmanagement, zugeschnitten auf die spezifischen Bedürfnisse jedes Kunden.",
-      "materials.h2":"Materialien, die wir übernehmen",
-      "materials.1.title":"Papier und Karton","materials.1.desc":"Verpackungen, Kartons und Papierabfälle, direkt am Standort abgeholt und für die Übergabe an Verwertungszentren vorbereitet.",
-      "materials.2.title":"Kunststoff und Folie","materials.2.desc":"Folien, Verpackungen und industrielle Kunststoffe, nach Polymertyp sortiert, bevor sie dem Recycling zugeführt werden.",
-      "materials.3.title":"Holz","materials.3.desc":"Holzverpackungen und -abfälle aus industriellen oder gewerblichen Tätigkeiten, zur Verwertung abgeholt.",
-      "materials.4.title":"Glas","materials.4.desc":"Glasverpackungen und -abfälle, getrennt gesammelt und an spezialisierte Verwertungszentren weitergeleitet.",
-      "materials.5.title":"Elektro- und Elektrohaushaltsgeräteabfälle","materials.5.desc":"Ausgediente Elektro- und Elektrohaushaltsgeräte (Elektroschrott), gesammelt und gemäß den Umweltvorschriften weitergeleitet.",
-      "advantages.h2":"Wettbewerbsvorteile",
-      "advantages.1":"Junges, motiviertes Team mit Erfahrung in der Branche.",
-      "advantages.2":"Betrieb mit modernen, effizienten Geräten.",
-      "advantages.3":"Einhaltung der Umweltgesetze und -standards.",
-      "advantages.4":"Flexibilität und Anpassungsfähigkeit an die Bedürfnisse der Kunden.",
-      "contact.h2":"Abholung vereinbaren",
-      "contact.p":"Rufen Sie uns an oder schreiben Sie uns, wir klären Menge und Materialart, und unser Team kommt direkt zu Ihrem Standort.",
-      "contact.hours":"Montag – Freitag, 08:00 – 18:00 Uhr",
-      "qr.caption":"Scannen für eine schnelle Anfrage über unsere Partnerplattform RoboRecy",
-      "footer.copyright":"© 2026 Eco Hyper Colectare (ecohypercolectare.ro). Alle Rechte vorbehalten.",
-      "footer.legal":"Betrieben von ECO HYPER ENERGY S.R.L. · Steuernummer 52234624 · CAEN 3811",
-      "footer.tagline":"Für eine saubere Umwelt, für eine gesündere Zukunft."
+      "meta.title":"Clean Connection - Abfallsammlung, Sortierung und Management",
+      "meta.description":"Clean Connection sammelt, sortiert und leitet die recycelbaren Abfälle von Geschäftspartnern an zugelassene Verarbeitungsbetriebe weiter.",
+      "nav.proces":"Prozess","nav.materiale":"Materialien","nav.companie":"Unternehmen","nav.contact":"Kontakt",
+      "hero.h1":"Ihr Abfallfluss, von Anfang bis Ende koordiniert.",
+      "hero.p":"Wir sammeln, sortieren und leiten die recycelbaren Abfälle unserer Geschäftspartner an zugelassene Verarbeitungsbetriebe weiter.",
+      "hero.cta":"Abholung planen",
+      "process.h2":"So funktioniert es",
+      "step1.title":"Anfrage","step1.desc":"Sie teilen uns Art und geschätzte Menge des Abfalls mit.",
+      "step2.title":"Abholung","step2.desc":"Unser Team holt die Materialien direkt an Ihrem Standort ab.",
+      "step3.title":"Sortierung","step3.desc":"Wir trennen die Materialien nach Kategorien gemäß den Verwertungsstandards.",
+      "step4.title":"Weiterleitung","step4.desc":"Wir senden sie an zugelassene Recyclingbetriebe.",
+      "materials.h2":"Materialien, die wir sammeln",
+      "materials.intro":"Wir sammeln eine breite Palette recycelbarer Abfälle, klassifiziert nach europäischen Abfallcodes.",
+      "mat1.title":"Papier und Karton","mat1.desc":"Verpackungen und Papierabfälle.",
+      "mat2.title":"Kunststoff und Folie","mat2.desc":"Industrielle Kunststoffe und Folien.",
+      "mat3.title":"Holz","mat3.desc":"Holzverpackungen und -abfälle.",
+      "mat4.title":"Glas","mat4.desc":"Glasverpackungen, getrennt gesammelt.",
+      "mat5.title":"Elektroschrott","mat5.desc":"Elektro- und Elektrohaushaltsgeräte.",
+      "why.h2":"Ein einziger Partner für Ihren gesamten Abfallfluss",
+      "why.p":"Wir koordinieren Abholung, Sortierung und Weiterleitung der Materialien, damit Ihr Unternehmen nicht mehrere Lieferanten für jede Abfallart verwalten muss.",
+      "fact1.label":"Abgedecktes Gebiet","fact1.value":"Regional",
+      "fact2.label":"Reaktionszeit",
+      "fact3.label":"Geschäftszeiten","fact3.value":"Mo-Fr, 8-18 Uhr",
+      "contact.h2":"Kontaktinformationen",
+      "contact.p":"Für Abholungen und Details zur Zusammenarbeit kontaktieren Sie uns direkt.",
+      "contact.hours":"Verfügbar Montag – Freitag, 08:00 – 18:00 Uhr",
+      "footer.copyright":"© 2026 Clean Connection (cleanconnection.ro). Alle Rechte vorbehalten.",
+      "footer.tagline":"Sammlung und Management von recycelbaren Abfällen."
     }
   };
 
+  var SUPPORTED = ['ro','en','de'];
+
   function detectLang(){
+    // 1) ?lang=xx in adresa
     var params = new URLSearchParams(window.location.search);
     var forced = (params.get('lang')||'').toLowerCase();
-    if (forced==='en'||forced==='de'||forced==='ro') return forced;
+    if (SUPPORTED.indexOf(forced) !== -1) return forced;
+
+    // 2) alegerea facuta manual de vizitator
+    try {
+      var saved = localStorage.getItem('cc_lang');
+      if (SUPPORTED.indexOf(saved) !== -1) return saved;
+    } catch(e){}
+
+    // 3) limba browserului: prima limba recunoscuta din lista (ro, en sau de)
     var langs = navigator.languages || [navigator.language || 'ro'];
     for (var i=0;i<langs.length;i++){
       var l = (langs[i]||'').slice(0,2).toLowerCase();
-      if (l==='en'||l==='de') return l;
+      if (SUPPORTED.indexOf(l) !== -1) return l;
     }
     return 'ro';
   }
 
+  // Salvez textele originale (romana) ca sa pot reveni la ele
+  var els = Array.prototype.slice.call(document.querySelectorAll('[data-i18n]'));
+  var roHTML = els.map(function(el){ return el.innerHTML; });
+  var roTitle = document.title;
+  var metaSelectors = [
+    'meta[name="description"]',
+    'meta[property="og:description"]',
+    'meta[name="twitter:description"]',
+    'meta[property="og:title"]',
+    'meta[name="twitter:title"]'
+  ];
+  var roMeta = {};
+  metaSelectors.forEach(function(sel){
+    var el = document.querySelector(sel);
+    if (el) roMeta[sel] = el.getAttribute('content');
+  });
+
+  function setMeta(sel, value){
+    var el = document.querySelector(sel);
+    if (el && value) el.setAttribute('content', value);
+  }
+
+  function updateSeoMeta(dict){
+    if (dict["meta.title"]) document.title = dict["meta.title"];
+    var desc = dict["meta.description"];
+    if (!desc) return;
+    setMeta('meta[name="description"]', desc);
+    setMeta('meta[property="og:description"]', desc);
+    setMeta('meta[name="twitter:description"]', desc);
+    setMeta('meta[property="og:title"]', dict["meta.title"]);
+    setMeta('meta[name="twitter:title"]', dict["meta.title"]);
+  }
+
+  function markActive(lang){
+    document.querySelectorAll('[data-set-lang]').forEach(function(btn){
+      var on = btn.getAttribute('data-set-lang') === lang;
+      btn.classList.toggle('active', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+  }
+
   function applyLang(lang){
-    if (lang === 'ro') { document.documentElement.lang = 'ro'; return; }
+    if (lang === 'ro'){
+      els.forEach(function(el, i){ el.innerHTML = roHTML[i]; });
+      document.title = roTitle;
+      Object.keys(roMeta).forEach(function(sel){ setMeta(sel, roMeta[sel]); });
+      document.documentElement.lang = 'ro';
+      markActive('ro');
+      return;
+    }
     var dict = translations[lang];
     if (!dict) return;
-    document.querySelectorAll('[data-i18n]').forEach(function(el){
+    els.forEach(function(el){
       var key = el.getAttribute('data-i18n');
       if (dict[key] !== undefined) el.textContent = dict[key];
     });
-    document.querySelectorAll('[data-i18n-html]').forEach(function(el){
-      var key = el.getAttribute('data-i18n-html');
-      if (dict[key] !== undefined) el.innerHTML = dict[key];
-    });
+    updateSeoMeta(dict);
     document.documentElement.lang = lang;
+    markActive(lang);
   }
+
+  document.querySelectorAll('[data-set-lang]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var lang = btn.getAttribute('data-set-lang');
+      try { localStorage.setItem('cc_lang', lang); } catch(e){}
+      applyLang(lang);
+    });
+  });
 
   applyLang(detectLang());
 })();
